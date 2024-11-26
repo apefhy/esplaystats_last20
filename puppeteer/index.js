@@ -93,6 +93,10 @@ const fetchStats = async (username) => {
       // Get the parent div that contains all the stats info
       const statElements = document.querySelectorAll('.flex.justify-between.items-center.h-full.pl-6.pr-10 .flex.flex-col.gap-2.text-center');
       
+      // Extract the win streak value (e.g., "4x")
+      const winStreakElement = document.querySelector('.font-teko.font-medium.text-3xl .text-green-400');
+      const winStreak = winStreakElement ? winStreakElement.innerText.trim() : '';
+
       // Extract the rank (Elite 2)
       const rankElement = document.querySelector('.font-teko.font-semibold.text-3xl');  // Rank is outside the flex items
       const rank = rankElement ? rankElement.innerText.trim() : '';
@@ -123,6 +127,9 @@ const fetchStats = async (username) => {
       // Add the '%' sign to the appropriate values
       if (statsArray[1]) statsArray[1] = statsArray[1] + '%';  // Add '%' to Win Percentage
       if (statsArray[4]) statsArray[4] = statsArray[4] + '%';  // Add '%' to Headshot Percentage
+
+      // Add win streak as the last element
+      if (winStreak) statsArray.push(winStreak);  // "4x"
 
       return statsArray;
     });
