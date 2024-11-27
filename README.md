@@ -1,6 +1,6 @@
 # EsplayStats Last20 Games
 
-This is a outdated webscraping version of this akkeoh.com service. For updated json fetch version check [![here.](https://github.com/apefhy/esplay_stats_widget)
+This is a outdated webscraping version of this akkeoh.com service. For updated json fetch version check ![here.](https://github.com/apefhy/esplay_stats_widget)
 
 Questions? Join Discord!
 
