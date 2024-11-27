@@ -1,6 +1,6 @@
 # EsplayStats Last20 Games
 
-Sourcecode för akkeoh.com:3000 och akkeoh.com:5000, widget för att tracka senaste 20 matcherna på Esplay Statistics page.
+This is a outdated webscraping version of this akkeoh.com service. For updated json fetch version check [![here.](https://github.com/apefhy/esplay_stats_widget)
 
 Questions? Join Discord!
 
